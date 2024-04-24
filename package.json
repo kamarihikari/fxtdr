@@ -1,0 +1,34 @@
+{
+  "name": "fxtdr",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Functional Trader Platform",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc",
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon ./index.js",
+    "prepare": "husky"
+  },
+  "author": "Kamari Vale",
+  "license": "MIT",
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "devDependencies": {
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "nodemon": "^3.1.0",
+    "prettier": "3.2.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "hertzy": "^0.1.1",
+    "lodash": "^4.17.21",
+    "pino": "^8.20.0"
+  }
+}
